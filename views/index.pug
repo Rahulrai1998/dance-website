@@ -1,0 +1,32 @@
+doctype html 
+html 
+    head
+        style 
+            include ../static/style.css
+    body 
+        nav#navbar
+            ul 
+                li #[a(href="/") Home] 
+                li #[a(href="/") About] 
+                li #[a(href="/") Contact us] 
+                li #[a(href="/") Services]
+                li #[a(href="/") Class info]
+                li #[a(href="/") Missions]
+        section#introSection.intro 
+            div#main Have us a chance to grab out the best of yours
+            div#sub focus learn dance and bang the floor
+        section#missionSection 
+            h3 Our Missions
+            div.cards
+                div.cardOne
+                    p card one
+                div.cardOne
+                    p card two
+                div.cardOne
+                    p card three
+        section#sponsorsSection.sponsors 
+            | Our Sponsors
+        footer#footer 
+            | Footer     
+        script 
+            include ../static/index.js         
