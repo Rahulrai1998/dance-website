@@ -60,7 +60,7 @@ div#sub{
 }
 #sponsorsSection,#missionSection,#footer{
     height: 300px;
-    background-color: rgb(153, 63, 236);
+    background-color: #28202f;
     font-family: 'Lato', sans-serif;
     padding-top: 30px;
     padding-bottom: 5px;
@@ -124,6 +124,17 @@ h4{
 }
 .card-content p{
     font-size: 16px;
+}
+#sponsors{
+    
+    max-width: 1000px;
+    margin: auto;
+    height: 190px;
+}
+.spImage{
+    height: 80%;
+    margin: 10px;;
+    
 }
 /*Responsive part*/
 @media screen and (max-width:700px){
