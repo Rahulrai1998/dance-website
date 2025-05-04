@@ -1,0 +1,55 @@
+doctype html 
+html 
+    head
+        style 
+            include ../static/style.css
+    body 
+        nav#navbar
+            ul
+                div#logo
+                    img(src="/static/logo4.png")
+                    |HDA
+                li #[a(href="/") Home] 
+                li #[a(href="/") About] 
+                li #[a(href="/") Contact us] 
+                li #[a(href="/") Services]
+                li #[a(href="/") Class info]
+                li #[a(href="/") Missions]
+        section#introSection.intro 
+            div#main Let us have a chance to grab out the best of yours
+            div#sub focus learn dance and bang the floor
+        section#missionSection 
+            h4 Our Missions
+            div.cards
+                div.cardOne
+                    h6 Dark perfection
+                    div.card-box
+                        div.card-image
+                            img(src="/static/img1.png") 
+                        div.card-content
+                            p This is the best card academy   
+                div.cardOne
+                    h6 Dance the way you like
+                    div.card-box
+                        div.card-image
+                            img(src="/static/img2.png") 
+                        div.card-content
+                            p This is the best card academy   
+                div.cardOne
+                    h6 Expert teaching
+                    div.card-box
+                        div.card-image
+                            img(src="/static/img4.png") 
+                        div.card-content
+                            p This is the best card academy   
+        section#sponsorsSection 
+            h4 Our Sponsors 
+            div#sponsors
+                img(src="../static/spn-logo1.png" , alt="Sponsor Image" , class="spImage")
+                img(src="../static/spn-logo2.png" , alt="Sponsor Image" , class="spImage")
+                img(src="../static/spn-logo3.png" , alt="Sponsor Image" , class="spImage")
+                img(src="../static/spn-logo4.png" , alt="Sponsor Image" , class="spImage")
+        footer#footer 
+            span.txt Copyrights 2022 DanceWebsite.com All rights reserved    
+        script 
+            include ../static/index.js         
