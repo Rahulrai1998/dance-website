@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+:root{
+    --gradient : linear-gradient(90deg, rgba(24,0,36,1) 0%, rgba(9,9,121,1) 39%, rgba(255,0,35,1) 100%);
+}
+#navbar{
+    /*background-color: rgb(240, 170, 18);*/
+    background: rgb(24,0,36);
+    background: linear-gradient(90deg, rgba(24,0,36,1) 0%, rgba(9,9,121,1) 39%, rgba(255,0,35,1) 100%);
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    right: 0;
+    left: 0;
+    /*background-color: black;*/
+}
+#navbar ul li{
+    list-style: none;
+    padding: 30px;
+}
+#navbar li a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+
+}
+#navbar li a:hover{
+      color: rgb(189, 171, 171);
+}
+#navbar ul{
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+
+    
+}
+#introSection{
+    height: 700px;
+    color: white;
+    background: url('/static/bg.jpg') no-repeat center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    align-items: center;
+    
+}
+div#main{
+    font-size: 4rem;
+    font-family: 'Lato', sans-serif;}
+div#sub{
+    font-size: 2rem;
+    font-family: 'Gideon Roman', cursive;
+}
+#sponsorsSection,#missionSection{
+    height: 300px;
+    background-color: #5f0b0b;
+    font-family: 'Lato', sans-serif;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+}
+#missionSection{
+    /*background-color: rgb(12, 236, 98);*/
+    background-color: white;
+    height: auto;
+    color: black;
+    
+}
+
+div.cards{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 40px;
+    padding-top: 10px;
+}
+div.cardOne{
+    border: 10px solid #d0ad21;
+    width: 28%;
+    height: 250px;
+    border-radius: 8px;
+}
+h4{
+    padding-bottom: 9px;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+#logo img{
+    height: 75px;
+    filter: invert(1);
+}
+.card-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0px;
+}
+.card-image{
+    height: 132px;
+    
+}
+.card-image img{
+    height: inherit;
+}
+.card-content p{
+    font-size: 30px;
+}
+.cardOne h6{
+    padding: 10px;
+}
+.card-content p{
+    font-size: 16px;
+}
+#sponsorsSection{
+    height: 50%;
+}
+#sponsors{
+    
+    max-width: 1000px;
+    margin: auto;
+    height: 190px;
+}
+.spImage{
+    height: 60%;
+    margin: 15px 40px;
+}
+#footer{
+    background-color: black;
+    height: 40px;
+    font-size: 17px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Responsive part*/
+@media screen and (max-width:700px){
+    div.cards{
+        flex-wrap: wrap;
+    }
+    div.cardOne{
+        width: 100%;
+        margin: 10px 10px;
+    }
+    div#main,div#sub{
+        font-size: 20px;
+    }
+    section.intro{
+        height: 100px;
+    }
+
+    
+}
